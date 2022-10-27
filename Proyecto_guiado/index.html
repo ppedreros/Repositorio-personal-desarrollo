@@ -6,6 +6,7 @@
     <title>Taller TypeScript</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" bref="data:,">
+    <link rel="stylesheet" type="text/css" href="tallertypescript.css">
     <script type="module" src='./scripts/main.js'></script>
 </head>
 <body>
@@ -13,5 +14,21 @@
     <table calss="table" id="aprendiz"></table>
     <h2>Estadisticas</h2>
     <table class="table" id="estadisticas"></table>
+    <h2>Cursos tomados</h2>
+    <div class="filtro">
+    <input type="text" class="form-control" id="texto-busqueda" placeholder="Filtrar por nombre">
+    <button type="button" id="boton-filtro" class="btn btn-success">Aplicar</button>
+    </div>
+    <table class="table" id="cursos">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Horas</th>
+                <th>Calififcacion</th>
+                <th>Certificado</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+    </table>
 </body>
 </html>
